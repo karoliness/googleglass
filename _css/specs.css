@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+section#conteudo {
+    width: 1000px;
+    margin: auto;
+}
+
+iframe#frame-spec {
+    width: 490px;
+    height: 280px;
+    border: none;
+    overflow: hidden;
+}
+/** deveria esconder a barra de rolagem.. mas caso não funcione colocar o scrolling="no" 
+igual ao exemplo abaixo: 
+  <iframe src="google-glass.html" scrolling="no" name="janela" id="frame-spec">  </iframe> */
+iframe#frame-spec::-webkit-scrollbar {
+    display: none;
+}
